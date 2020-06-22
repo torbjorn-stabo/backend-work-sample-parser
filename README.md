@@ -24,7 +24,7 @@ Given the file "config.txt", with the following content:
     ##### NOTE: keep the connection timeout low cache.connection.timeout = 3
 
 Create a function that reads & converts the above file into a multi­dimensional array. 
-The parser should be able to handle unlimited numbers of levels in config.
+The parser should be able to handle unlimited numbers of levels in the config.
 
 The output should yield exactly 
 the following when run through var_dump():

@@ -1,10 +1,12 @@
-# Backend work sample Configuration parser
+<p align="center"><img src="https://sp-cdn.mytaste.org/images/logo-full.svg?v=197" height="50px"></p>
+
+## Backend work sample configuration parser
 
 ##### Delivery
 Work in your own git and send us a link to your repo.
 
 ##### Restrictions
-You must not use any PHP frameworks ( native PHP preferable ).
+You should use vanilla PHP without any framework.
 
 ##### The assignment
 Given the file "config.txt", with the following content:
@@ -21,9 +23,11 @@ Given the file "config.txt", with the following content:
     debug.enabled = false
     ##### NOTE: keep the connection timeout low cache.connection.timeout = 3
 
-Create a function that reads & converts the above file into a multi­dimensional array. The output should yield exactly 
-the following when run through var_dump():
+Create a function that reads & converts the above file into a multi­dimensional array. 
+The parser should be able to handle unlimited numbers of levels in config.
 
+The output should yield exactly 
+the following when run through var_dump():
 
         array(3) { 
             ["db"]=> 
@@ -48,8 +52,9 @@ the following when run through var_dump():
                 ["connection"]=> 
                 array(1) {
                     ["timeout"]=>
-                    int(3) }
-                } 
+                    int(3) 
+                }
+            } 
             ["debug"]=> 
             array(1) {
                 ["enabled"]=>

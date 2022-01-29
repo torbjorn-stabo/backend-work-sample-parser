@@ -6,5 +6,7 @@ db.name.external = "db­01.company.tld"
 
 cache.ttl = 3600
 
+test = "Oops
+
 debug.enabled = false
 ##### NOTE: keep the connection timeout low cache.connection.timeout = 3
